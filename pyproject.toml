@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-chunker"
+version = "0.1.0"
+description = "Dependency-free text chunking strategies for RAG pipelines."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["rag", "chunking", "llm", "nlp", "retrieval", "ai"]
+authors = [{ name = "<YOUR NAME>" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+rag-chunker = "rag_chunker.cli:main"
+
+[tool.setuptools]
+packages = ["rag_chunker"]
